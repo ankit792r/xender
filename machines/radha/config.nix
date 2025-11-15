@@ -7,6 +7,7 @@ in {
         ./hardware-configuration.nix
         ../../common/boot.nix
         ../../common/network.nix
+        ../../nix-conf.nix
         ../../common/users.nix
         ../../common/packages.nix
     ];
