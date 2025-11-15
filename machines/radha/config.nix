@@ -8,6 +8,7 @@ in {
         ../../common/boot.nix
         ../../common/network.nix
         ../../common/users.nix
+        ../../common/packages.nix
     ];
 
     networking.hostName = "kishori-ju"; 
