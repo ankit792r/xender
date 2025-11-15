@@ -1,12 +1,15 @@
 { pkgs, ... }: {
-    hardware.opengl = {
-        enable = true;
-        driSupport = true;
-        driSupport32Bit = true;
-    };
-
-    hardware.nvidia = {
-        modesetting.enable = true;
-        open = true;
+    hardware = { 
+        opengl = {
+            enable = true;
+            extraPackages = with pkgs; [
+                mesa.vulkanDrivers
+                # nvidiaPackages.stable
+            ];
+        };
+        nvidia = {
+            modesetting.enable = true;
+            open = true;
+        };
     };
 }
