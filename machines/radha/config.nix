@@ -6,7 +6,7 @@
         ../../common/nix-conf.nix
         ../../common/users.nix
         ../../common/packages.nix
-        ../../common/sddm.nix
+        ../../common/login.nix
         ../../common/services.nix
         ../../common/desktop.nix
     ];
