@@ -15,6 +15,10 @@
     MOZ_ENABLE_WAYLAND = "1";
   };
 
+  environment.systemPackages = [
+    pkgs.xwayland-satellite
+  ];
+
   services.xserver.enable = true;
 
   fonts = {
