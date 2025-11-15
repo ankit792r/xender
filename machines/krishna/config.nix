@@ -3,6 +3,7 @@
         ./hardware-configuration.nix
         ../../common/boot.nix
         ../../common/network.nix
+        ../../common/users.nix
     ];
 
     networking.hostName = "thakur-ji"; 
