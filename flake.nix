@@ -3,7 +3,7 @@
     inputs = {
         krishna.url = "path:./machines/krishna";
     };
-    outputs = { krishna }: {
+    outputs = { self, krishna, ... }: {
         nixosConfigurations = {
             krishna = krishna.nixosConfigurations.krishna;
         };
