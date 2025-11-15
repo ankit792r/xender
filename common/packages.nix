@@ -38,7 +38,6 @@
     
     # Archive tools
     p7zip
-    unrar
     
     # Development tools
     gcc
