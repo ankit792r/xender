@@ -10,7 +10,11 @@
 
     networking.hostName = "kishori-ju";
 
-    home-manager.users.ankit = import ./home.nix;
+    home-manager = {
+        useGlobalPkgs = true;
+        useUserPackages = true;
+        users.ankit = import ./home.nix;
+    }
     
     system.stateVersion = "25.05";
 }
