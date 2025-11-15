@@ -11,8 +11,7 @@ in {
         ../../common/packages.nix
     ];
 
-    networking.hostName = "kishori-ju"; 
-    environment.systemPackages = with pkgs; [];
+    networking.hostName = "kishori-ju";
 
     home-manager.users = builtins.listToAttrs (map 
     (u: {
