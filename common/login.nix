@@ -9,6 +9,11 @@
     sessionPackages = [ pkgs.niri ];
   };
   
+  environment.sessionVariables = {
+    XDG_SESSION_TYPE = "wayland";
+    QT_QPA_PLATFORM = "wayland";
+    MOZ_ENABLE_WAYLAND = "1";
+  };
 
   services.xserver.enable = true;
 
