@@ -1,12 +1,23 @@
 { config, pkgs, ... }:
 
 {
-  services.displayManager.sddm = {
+  # Wayland login manager (greetd)
+  services.greetd = {
     enable = true;
-    wayland.enable = true;
+
+    settings = {
+      default_session = {
+        command = ''
+          ${pkgs.cage}/bin/cage -s \
+          ${pkgs.greetd.gtkgreet}/bin/gtkgreet --cmd niri
+        '';
+      };
+    };
   };
 
-  services.xserver.enable = true;
+  # Pure Wayland system (no X11 server)
+  # This does NOT disable Xwayland.
+  services.xserver.enable = false;
 
   fonts = {
     enableDefaultPackages = true;
