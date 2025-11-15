@@ -1,9 +1,6 @@
 { config, pkgs, ... }:
 
 {
-  # Desktop environment packages and utilities
-  # Note: Core wayland packages are in niri.nix to avoid duplication
-  
   environment.systemPackages = with pkgs; [
     # Desktop utilities
     xdg-utils
@@ -59,12 +56,20 @@
   ];
 
   # XDG portal integration
+  # xdg.portal = {
+  #   enable = true;
+  #   configPackages = [ pkgs.xdg-desktop-portal-wlr ];
+  #   extraPortals = with pkgs; [
+  #       xdg-desktop-portal-wlr
+  #       pkgs.xdg-desktop-portal-gtk
+  #   ];
+  # };
+
   xdg.portal = {
     enable = true;
-    configPackages = [ pkgs.xdg-desktop-portal-wlr ];
-    extraPortals = with pkgs; [
-        xdg-desktop-portal-wlr
-        pkgs.xdg-desktop-portal-gtk
+    extraPortals = [
+      pkgs.xdg-desktop-portal-wlr
+      pkgs.xdg-desktop-portal-gtk
     ];
   };
 }

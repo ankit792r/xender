@@ -1,10 +1,16 @@
-{ config, pkgs, ... }:
+{ config, pkgs, inputs, ... }:
 
 {
-  services.displayManager.sddm = { 
-    enable = true;
-    wayland.enable = true;
+  services.displayManager = {
+    sddm = { 
+      enable = true;
+      wayland.enable = true;
+    };
+    sessionPackages = [
+      (inputs.niri.packages.${pkgs.system}.default or pkgs.niri)
+    ];
   };
+  
 
   services.xserver.enable = true;
 
