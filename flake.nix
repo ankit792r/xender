@@ -7,5 +7,5 @@
         nixosConfigurations = {
             krishna = krishna.nixosConfigurations.krishna;
         };
-    }
-};
+    };
+}
