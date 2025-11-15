@@ -23,6 +23,8 @@
     curl
     git
     rsync
+    pavucontrol
+    blueman
     
     # Text editors
     vim

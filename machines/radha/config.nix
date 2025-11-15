@@ -8,6 +8,7 @@
         ../../common/packages.nix
         ../../common/sddm.nix
         ../../common/services.nix
+        ../../common/desktop.nix
     ];
 
     networking.hostName = "kishori-ju";
