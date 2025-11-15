@@ -1,4 +1,4 @@
-{ config, pkgs, inputs, ... }:
+{ config, pkgs, ... }:
 
 {
   services.displayManager = {
@@ -6,9 +6,7 @@
       enable = true;
       wayland.enable = true;
     };
-    sessionPackages = [
-      (inputs.niri.packages.${pkgs.system}.default or pkgs.niri)
-    ];
+    sessionPackages = [ pkgs.niri ];
   };
   
 
