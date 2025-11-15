@@ -6,7 +6,7 @@
         ../../common/users.nix
     ];
 
-    networking.hostName = "thakur-ji"; 
+    networking.hostName = "shree-hari";
     environment.systemPackages = with pkgs; [];
   
     system.stateVersion = "25.05";
