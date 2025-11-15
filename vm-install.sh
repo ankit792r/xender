@@ -1,3 +1,6 @@
+
+set -e  # Exit immediately if a command exits with a non-zero status
+
 echo "this script install nixos in vm only"
 echo ""
 echo "run this script in root"
