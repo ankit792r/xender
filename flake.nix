@@ -8,4 +8,4 @@
             krishna = krishna.nixosConfigurations.krishna;
         };
     }
-}
+};
