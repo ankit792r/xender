@@ -20,6 +20,7 @@
   ];
 
   services.xserver.enable = true;
+  services.xserver.videoDrivers = [ "nvidia" ];
 
   fonts = {
     enableDefaultPackages = true;
