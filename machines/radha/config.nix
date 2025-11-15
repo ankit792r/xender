@@ -16,7 +16,7 @@
         useGlobalPkgs = true;
         useUserPackages = true;
         users.ankit = import ./home.nix;
-    }
+    };
     
     system.stateVersion = "25.05";
 }
