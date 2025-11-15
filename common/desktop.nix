@@ -61,9 +61,6 @@
   # XDG portal integration
   xdg.portal = {
     enable = true;
-    extraPortals = with pkgs; [
-      xdg-desktop-portal-gtk
-      xdg-desktop-portal-wlr
-    ];
+    extraPortals = [ pkgs.xdg-desktop-portal-gtk ];
   };
 }
