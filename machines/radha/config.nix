@@ -1,8 +1,4 @@
-{ config, pkgs, ... }:
-let
-    userNames = builtins.filter (u: u != "root")
-    (builtins.attrNames config.users.users);    
-in {
+{ config, pkgs, ... }: {
     imports = [
         ./hardware-configuration.nix
         ../../common/boot.nix
@@ -14,12 +10,7 @@ in {
 
     networking.hostName = "kishori-ju";
 
-    home-manager.users = builtins.listToAttrs (map 
-    (u: {
-        name = u;
-        value = import ./home.nix;
-    })
-    userNames);
+    home-manager.users.ankit = import ./home.nix;
     
     system.stateVersion = "25.05";
 }
