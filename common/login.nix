@@ -8,19 +8,12 @@
     };
     sessionPackages = [ pkgs.niri ];
   };
-  
-  environment.sessionVariables = {
-    XDG_SESSION_TYPE = "wayland";
-    QT_QPA_PLATFORM = "wayland";
-    MOZ_ENABLE_WAYLAND = "1";
-  };
 
   environment.systemPackages = [
     pkgs.xwayland-satellite
   ];
 
   services.xserver.enable = true;
-  services.xserver.videoDrivers = [ "modesetting" ];
 
   fonts = {
     enableDefaultPackages = true;

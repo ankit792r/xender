@@ -5,7 +5,7 @@
         ../../common/network.nix
         ../../common/nix-conf.nix
         ../../common/users.nix
-        ../../common/hardware.nix
+        ../../common/nvidia.nix
         ../../common/login.nix
         ../../common/packages.nix
         ../../common/services.nix
