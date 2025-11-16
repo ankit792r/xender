@@ -6,20 +6,21 @@
   # networking.networkmanager.enable = true;  # Easiest to use and most distros use this by default.
   # networking.networkmanager.wifi.backend = "iwd";
 
-  networking.wireless.iwd = {
-    enable = true;
-    settings = {
-      General = {
-        EnableNetworkConfiguration = true;
-      };
-      Network = {
-        EnableIPv6 = true;
-      };
-      Scan = {
-        DisablePeriodicScan = true;
-      };
-    };
-  };
+  #networking.wireless.iwd = {
+  #  enable = true;
+  #  settings = {
+  #    General = {
+  #      EnableNetworkConfiguration = true;
+  #    };
+  #    Network = {
+  #      EnableIPv6 = true;
+  #    };
+  #    Scan = {
+  #      DisablePeriodicScan = true;
+  #    };
+  #  };
+  #};
+  networking.networkmanager.enable = true;
 
   environment.systemPackages = with pkgs; [
     impala

@@ -1,4 +1,6 @@
 { pkgs, ... }:  {
+  programs.firefox.enable = true;
+  nixpkgs.config.allowUnfree = true;
   environment.systemPackages = with pkgs; [
     # Core utilities
     coreutils
@@ -17,7 +19,6 @@
     procps
     psmisc
     which
-    file
     tree
     wget
     curl
@@ -34,9 +35,6 @@
     
     # Network tools
     iputils
-    bind
-    nmap
-    tcpdump
     
     # Archive tools
     p7zip
@@ -45,11 +43,10 @@
     gcc
     gnumake
     pkg-config
-    
-    # Shell utilities
-    bash
-    
+       
     # File managers
     ranger
+    mpv
+    vlc
   ];
 }
