@@ -5,14 +5,13 @@
         ../../common/network.nix
         ../../common/nix-conf.nix
         ../../common/users.nix
-        ../../common/nvidia.nix
-        ../../common/login.nix
+        ../../common/niri.nix
         ../../common/packages.nix
         ../../common/services.nix
         ../../common/desktop.nix
     ];
 
-    networking.hostName = "kishori-ju";
+    networking.hostName = "Barsana";
 
     home-manager = {
         useGlobalPkgs = true;

@@ -8,7 +8,7 @@
         ../../common/packages.nix
     ];
 
-    networking.hostName = "shree-hari";
+    networking.hostName = "Vrindavan";
   
     system.stateVersion = "25.05";
 }
