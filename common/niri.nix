@@ -20,6 +20,7 @@
   services.libinput.enable = true;
 
   environment.systemPackages = with pkgs; [
+    xwayland-satellite
     # Screenshot tools
     grim
     slurp
