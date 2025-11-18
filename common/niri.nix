@@ -23,5 +23,7 @@
     # Screenshot tools
     grim
     slurp
+    pavucontrol
+    blueman
   ];
 }

@@ -24,8 +24,7 @@
     curl
     git
     rsync
-    pavucontrol
-    blueman
+
     
     # Text editors
     vim
@@ -38,17 +37,11 @@
     
     # Archive tools
     p7zip
-    
-    # Development tools
-    gcc
-    gnumake
-    pkg-config
        
     # File and media managers
     ranger
     mpv
     vlc
     zathura
-    
   ];
 }
