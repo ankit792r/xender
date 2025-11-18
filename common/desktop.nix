@@ -22,39 +22,4 @@
 		alsa.enable = true;
 		pulse.enable = true;
 	};
-	
-  environment.systemPackages = with pkgs; [
-    # Screenshot tools
-    grim
-    slurp
-    
-    # Background
-    swaybg
-    
-    # Application launcher
-    fuzzel
-    
-    # Status bar
-    waybar
-    
-    # Notification daemon
-    mako
-    
-    # Image viewer
-    feh
-    imv
-    
-    # PDF viewer
-    zathura
-    
-    # Media players
-    mpv
-    vlc
-    
-    # Browsers
-    firefox
-    
-    # Terminal emulators
-    alacritty
-  ];
 }

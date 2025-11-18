@@ -20,4 +20,10 @@
   };
 
   services.libinput.enable = true;
+
+  environment.systemPackages = with pkgs; [
+    # Screenshot tools
+    grim
+    slurp
+  ];
 }

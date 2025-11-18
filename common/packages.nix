@@ -44,9 +44,11 @@
     gnumake
     pkg-config
        
-    # File managers
+    # File and media managers
     ranger
     mpv
     vlc
+    zathura
+    
   ];
 }
