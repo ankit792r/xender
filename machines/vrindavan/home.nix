@@ -1,7 +1,6 @@
 { pkgs, inputs, ... }: {
     imports = [
         ../../configs/waybar/default.nix
-        ../../configs/swaybg/default.nix
         ../../configs/mako/default.nix
         ../../configs/rofi/default.nix
     ];
