@@ -1,4 +1,4 @@
 { pkgs, ... }: {
-  packages.swaybg.enable = true;
+  services.swaybg.enable = true;
 }
 
