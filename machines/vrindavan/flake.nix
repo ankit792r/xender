@@ -13,7 +13,7 @@
     let
       system = "x86_64-linux";
     in {
-      nixosConfigurations.radha = nixpkgs.lib.nixosSystem {
+      nixosConfigurations.vrindavan = nixpkgs.lib.nixosSystem {
         inherit system;
         modules = [
           ./config.nix

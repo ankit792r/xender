@@ -10,7 +10,7 @@
     let
       system = "x86_64-linux";
     in {
-      nixosConfigurations.krishna = nixpkgs.lib.nixosSystem {
+      nixosConfigurations.gokul = nixpkgs.lib.nixosSystem {
         inherit system;
         modules = [
           ./config.nix
