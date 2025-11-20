@@ -1,5 +1,5 @@
 { pkgs, ... }: {
-  services.swaybg = {
+  packages.swaybg = {
     enable = true;
     systemd.enable = true;
     # Wallpaper can be set via command: swaybg -i /path/to/wallpaper.jpg
