@@ -11,7 +11,7 @@
         ../../common/desktop.nix
     ];
 
-    networking.hostName = "Barsana";
+    networking.hostName = "Vrindavan";
 
     home-manager = {
         useGlobalPkgs = true;

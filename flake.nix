@@ -1,13 +1,13 @@
 {
     description = "Vrindavan";
     inputs = {
-        krishna.url = "path:./machines/krishna";
-        radha.url = "path:./machines/radha";
+        vrindavan.url = "path:./machines/vrindavan";
+        gokul.url = "path:./machines/gokul";
     };
-    outputs = { self, krishna, radha, ... }: {
+    outputs = { self, vrindavan, gokul, ... }: {
         nixosConfigurations = {
-            krishna = krishna.nixosConfigurations.krishna;
-            radha = radha.nixosConfigurations.radha;
+            gokul = gokul.nixosConfigurations.gokul;
+            vrindavan = vrindavan.nixosConfigurations.vrindavan;
         };
     };
 }
