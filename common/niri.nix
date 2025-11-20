@@ -1,6 +1,5 @@
 { config, pkgs, ... }: {
   programs.niri.enable = true;
-  xdg.configFile."niri/config.kdl".source = ../configs/niri/config.kdl;
 
   services.greetd = {
     enable = true;

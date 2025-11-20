@@ -5,6 +5,7 @@
         ../../common/network.nix
         ../../common/nix-conf.nix
         ../../common/users.nix
+        ../../common/niri.nix
         ../../common/packages.nix
         ../../common/services.nix
         ../../common/desktop.nix
