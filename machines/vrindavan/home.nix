@@ -1,5 +1,6 @@
 { pkgs, inputs, ... }: {
     imports = [
+        ../../common/niri.nix
         ../../configs/waybar/default.nix
         ../../configs/swaybg/default.nix
         ../../configs/mako/default.nix
