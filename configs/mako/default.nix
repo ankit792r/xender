@@ -1,10 +1,7 @@
 { pkgs, ... }: {
-  programs.mako = {
-    enable = true;
-    systemd.enable = true;
-  };
+  services.mako.enable = true;
 
-  xdg.configFile."mako/config".source = ./config;
-  xdg.configFile."mako/theme.css".source = ./theme.css;
+  home.file.".config/mako/config".source = ./config;
+  home.file.".config/mako/theme.css".source = ./theme.css;
 }
 
