@@ -1,5 +1,5 @@
 { pkgs, ... }: {
-  services.mako = {
+  programs.mako = {
     enable = true;
     systemd.enable = true;
   };
