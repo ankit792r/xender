@@ -2,8 +2,7 @@
   programs.waybar = {
     enable = true;
     systemd.enable = true;
-    settings = builtins.fromJSON
-      (builtins.readFile ./config.jsonc);
+    settings = import ./config.nix;
     style = builtins.readFile ./style.css;
   };
 }

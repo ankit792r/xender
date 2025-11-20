@@ -2,7 +2,9 @@
   services.mako = {
     enable = true;
     systemd.enable = true;
-    config = builtins.readFile ./config;
   };
+
+  xdg.configFile."mako/config".source = ./config;
+  xdg.configFile."mako/theme.css".source = ./theme.css;
 }
 

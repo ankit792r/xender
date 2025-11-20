@@ -2,7 +2,7 @@
   programs.rofi = {
     enable = true;
     theme = ./theme.rasi;
-    configPath = ./config.rasi;
   };
-}
 
+  xdg.configFile."rofi/config.rasi".source = ./config.rasi;
+}
