@@ -14,7 +14,15 @@
     extraPortals = [ pkgs.xdg-desktop-portal-wlr ];
   };
 
-  services.libinput.enable = true;
+  programs = {
+    waybar.enable = true;
+    rofi.enable = true;
+  };
+
+  services = {
+    libinput.enable = true;
+    mako.enable = true;
+  };
 
   environment.systemPackages = with pkgs; [
     xwayland-satellite

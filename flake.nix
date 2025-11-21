@@ -11,5 +11,5 @@
             vrindavan = vrindavan.nixosConfigurations.vrindavan;
             barsana = barsana.nixosConfigurations.barsana;
         };
-    };  
+    };
 }
