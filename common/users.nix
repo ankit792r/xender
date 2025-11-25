@@ -1,7 +1,7 @@
 { config, pkgs, ... }: {
-    users.users.ankit = {
+    users.users."${config.var.username}" = {
         isNormalUser = true;
-        description = "Ankit";
+        description = "${config.var.username}";
         extraGroups = [ "networkmanager" "input" "wheel" "video" "audio" "tss" ];
         packages = with pkgs; [
             neovim

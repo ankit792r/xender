@@ -9,6 +9,7 @@
         ../../common/packages.nix
         ../../common/services.nix
         ../../common/desktop.nix
+        ../../variables.nix
     ];
 
     networking.hostName = "Vrindavan";
@@ -16,7 +17,7 @@
     home-manager = {
         useGlobalPkgs = true;
         useUserPackages = true;
-        users.ankit = import ./home.nix;
+        users."${config.var.username}" = import ./home.nix;
     };
     
     system.stateVersion = "25.05";
