@@ -10,7 +10,9 @@ fi
 nixos-rebuild switch --flake .#$MACHINE
 
 echo "Generating hardware configuration"
-sudo nixos-generate-config --show-hardware-config > machines/{gokul,vrindavan,barsana}/hardware-configuration.nix
+sudo nixos-generate-config --show-hardware-config > machines/gokul/hardware-configuration.nix
+sudo nixos-generate-config --show-hardware-config > machines/vrindavan/hardware-configuration.nix
+sudo nixos-generate-config --show-hardware-config > machines/barsana/hardware-configuration.nix
 
 echo "Linking config files to user's config directory"
 TARGET_CONFIG_DIR="$HOME/.config"
