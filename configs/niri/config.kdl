@@ -84,7 +84,7 @@ layout {
 
 spawn-at-startup "waybar"
 spawn-at-startup "mako"
-spawn-sh-at-startup "swaybg -i ~/.config/oxide/current/backgrounds -m fill"
+spawn-sh-at-startup "swaybg -i ~/.config/oxide/backgrounds/50.png -m fill"
 
 hotkey-overlay {
 }
