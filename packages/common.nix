@@ -22,16 +22,32 @@
     wget
     curl
     git
+    lazygit
     rsync
 
+    # dev tools
+    rustup
+    cargo
+    rustc
+
+    docker
+    docker-compose
+    lazydocker
     
     # Text editors
     vim
-    
+    fzf
+
     # System monitoring
     htop
+    fastfetch
     
     # Network tools
     iputils
+  ];
+
+  fonts.packages = with pkgs; [
+    nerd-fonts.jetbrains-mono
+    nerd-fonts.fira-code
   ];
 }

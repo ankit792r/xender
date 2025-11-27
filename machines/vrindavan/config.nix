@@ -1,14 +1,15 @@
 { config, pkgs, ... }: {
     imports = [
         ./hardware-configuration.nix
-        ../../common/boot.nix
-        ../../common/network.nix
-        ../../common/nix-conf.nix
-        ../../common/users.nix
-        ../../common/niri.nix
-        ../../common/packages.nix
-        ../../common/services.nix
-        ../../common/desktop.nix
+        ../../modules/boot.nix
+        ../../modules/network.nix
+        ../../modules/nix-conf.nix
+        ../../modules/users.nix
+        ../../modules/niri.nix
+        ../../packages/common.nix
+        ../../packages/office.nix
+        ../../modules/services.nix
+        ../../modules/desktop.nix
         ../../variables.nix
     ];
 

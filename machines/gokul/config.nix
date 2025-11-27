@@ -1,11 +1,11 @@
 { config, pkgs, ... }: {
     imports = [
         ./hardware-configuration.nix
-        ../../common/boot.nix
-        ../../common/nix-conf.nix
-        ../../common/network.nix
-        ../../common/users.nix
-        ../../common/packages.nix
+        ../../modules/boot.nix
+        ../../modules/nix-conf.nix
+        ../../modules/network.nix
+        ../../modules/users.nix
+        ../../packages/common.nix
     ];
 
     networking.hostName = "Gokul";

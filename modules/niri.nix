@@ -19,9 +19,11 @@
   environment.systemPackages = with pkgs; [
     xwayland-satellite
     mako
-    fuzzel
+    rofi-wayland
     waybar
     alacritty
+    swaybg
+    swaylock
     
     
     # Screenshot tools
