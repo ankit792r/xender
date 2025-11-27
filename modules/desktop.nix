@@ -14,12 +14,4 @@
 		LC_TELEPHONE = "en_IN";
 		LC_TIME = "en_IN";
 	};
-
-	services.pulseaudio.enable = false;
-	security.rtkit.enable = true;
-	services.pipewire = {
-		enable = true;
-		alsa.enable = true;
-		pulse.enable = true;
-	};
 }

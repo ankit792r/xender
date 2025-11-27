@@ -1,1 +1,0 @@
-sudo nixos-generate-config --show-hardware-config > machines/*/hardware-configuration.nix
