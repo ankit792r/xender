@@ -1,14 +1,5 @@
 { config, pkgs, ... }: {
   programs.niri.enable = true;
-
-  #services.greetd = {
-  #  enable = true;
-  #  settings.default_session = {
-  #    command = "${pkgs.niri}/bin/niri-session";
-  #    user = "ankit";
-  #  };
-  #};
-  
   services.xserver.displayManager.gdm.enable = true;
 
   xdg.portal = {

@@ -1,5 +1,5 @@
 {
-  description = "Radha rani ka niwas";
+  description = "Vrindavan - the city of Radha and Krishna";
 
   inputs = {
     nixpkgs.url = "github:nixos/nixpkgs/nixos-25.05";
