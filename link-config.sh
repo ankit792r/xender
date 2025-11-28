@@ -1,6 +1,6 @@
 #! /bin/bash
 
-set -e  # Exit immediately if a command exits with a non-zero status
+set -e
 
 echo "Linking config files to user's config directory"
 TARGET_CONFIG_DIR="$HOME/.config"

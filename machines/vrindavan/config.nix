@@ -1,25 +1,20 @@
 { config, pkgs, ... }: {
     imports = [
         ./hardware-configuration.nix
+        ../../modules/nix-conf.nix
         ../../modules/boot.nix
         ../../modules/network.nix
-        ../../modules/nix-conf.nix
-        ../../modules/users.nix
+        ../../modules/desktop.nix
+        ../../modules/services.nix
+
         ../../modules/niri.nix
         ../../packages/common.nix
         ../../packages/office.nix
-        ../../modules/services.nix
-        ../../modules/desktop.nix
+        
         ../../variables.nix
+        ../../modules/users.nix
     ];
 
-    networking.hostName = "Vrindavan";
-
-    home-manager = {
-        useGlobalPkgs = true;
-        useUserPackages = true;
-        users."${config.var.username}" = import ./home.nix;
-    };
-    
+    networking.hostName = "vrindavan";    
     system.stateVersion = "25.05";
 }

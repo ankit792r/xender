@@ -6,16 +6,15 @@
     wget
     curl
     git
-    lazygit
+    
 
     gcc
     rustup
     cargo
     rustc
+    nodejs
 
-    docker
-    docker-compose
-    lazydocker
+    lazygit
 
     vim
     neovim

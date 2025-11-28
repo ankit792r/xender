@@ -1,7 +1,6 @@
 #!/bin/bash
-# Script to manage git pull when repo metadata is stored as .gitb instead of .git
 
-set -e  # Exit immediately if a command exits with a non-zero status
+set -e
 
 GIT_DIR=".git"
 GIT_BACKUP_DIR=".gitb"
