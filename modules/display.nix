@@ -18,7 +18,7 @@
                     Current = "breeze";
                     CursorTheme = "Adwaita";
                     CursorSize = "24";
-                }
+                };
             };
         };
     };

@@ -104,6 +104,6 @@
 				</match>
 				</fontconfig>
 			'';
-		}
+		};
 	};
 }
