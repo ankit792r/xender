@@ -1,4 +1,4 @@
-{ config, pkgs, inputs, ... }: {
+{ config, pkgs, inputs, var, ... }: {
     imports = [
         ../../packages/office.nix
     ];
@@ -36,4 +36,5 @@
     ];
 
     home.file = {};
+    home.stateVersion = var.homeManagerVersion;
 }

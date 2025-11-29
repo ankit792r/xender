@@ -2,8 +2,8 @@
     config= {
         var = {
             username = "ankit";
-            nixosVersion = "25.02";
-            homeManagerVersion = "25.02";
+            nixosVersion = "25.05";
+            homeManagerVersion = "25.05";
         };
         theme = {
             fonts = {

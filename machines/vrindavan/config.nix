@@ -19,7 +19,10 @@
         useGlobalPkgs = true;
         useUserPackages = true;
         users."${config.var.username}" = import ./home.nix;
-        extraSpecialArgs = { inherit inputs; };
+        extraSpecialArgs = { 
+            inherit inputs;
+            var = config.var;
+        };
     };
     system.stateVersion = config.var.nixosVersion;
 }
