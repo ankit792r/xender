@@ -14,14 +14,14 @@
   };
 
   outputs = { nixpkgs, home, stylix, ... }@inputs: {
-      nixosConfigurations.vrindavan = nixpkgs.lib.nixosSystem {
-        system = "x86_64-linux";
-        specialArgs = { inherit inputs; };
-        modules = [
-          ./config.nix
-          stylix.nixosModules.stylix
-          home.nixosModules.home-manager
-        ];
-      };
+    nixosConfigurations.vrindavan = nixpkgs.lib.nixosSystem {
+      system = "x86_64-linux";
+      specialArgs = { inherit inputs; };
+      modules = [
+        ./config.nix
+        stylix.homeModules.stylix
+        home.nixosModules.home-manager
+      ];
     };
+  };
 }
