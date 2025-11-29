@@ -11,8 +11,6 @@
         ../../modules/users.nix
         ../../packages/system.nix
         ../../variables.nix
-
-        ../../modules/sessions/niri.nix
     ];
 
     networking.hostName = "vrindavan";
