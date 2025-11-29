@@ -1,6 +1,6 @@
 { config, pkgs, inputs, ... }: {
     imports = [
-        ../../modules/sessions/niri.nix
+        
         ../../packages/office.nix
     ];
 
