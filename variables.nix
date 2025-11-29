@@ -35,10 +35,14 @@
         # };
     };
 
-#     options = {
-#         var = lib.mkOption {
-#             type = lib.types.attrs;
-#             default = {};
-#         };
-#   };
+    options = {
+        var = lib.mkOption {
+            type = lib.types.attrs;
+            default = {};
+        };
+        theme = lib.mkOption {
+            type = lib.types.attrs;
+            default = {};
+        };
+    };
 }
