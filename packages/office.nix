@@ -17,7 +17,7 @@
 
     nodejs_24
     yarn
-    prettier
+    prettierd
     eslint_d
   ];
 }
