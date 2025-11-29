@@ -11,8 +11,8 @@
                     EnableAvatars = false;
                 };
                 Theme = {
-                    Font = locals.fonts.main;
-                    FontSize = locals.fonts.size;
+                    Font = config.theme.fonts.main;
+                    FontSize = config.theme.fonts.size;
                     
                     # Clean theme settings
                     Current = "breeze";

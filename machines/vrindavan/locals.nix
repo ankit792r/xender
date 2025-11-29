@@ -1,11 +1,11 @@
 { pkgs, ... }:  {
-    wallpapers = {
-        # Main wallpaper for Stylix theming and workspace backgrounds
-        main = ../../dotfiles/.config/backgrounds/snaky.jpg;
+    # wallpapers = {
+    #     # Main wallpaper for Stylix theming and workspace backgrounds
+    #     main = ../../dotfiles/.config/backgrounds/snaky.jpg;
         
-        # Blurred version for lock screen and overview backdrop
-        blurred = ../../dotfiles/.config/backgrounds/blurry-snaky.jpg;
-    };
+    #     # Blurred version for lock screen and overview backdrop
+    #     blurred = ../../dotfiles/.config/backgrounds/blurry-snaky.jpg;
+    # };
     fonts = {
         # System UI font (for SDDM, system dialogs)
         main = "Inter";
