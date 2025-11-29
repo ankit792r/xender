@@ -1,6 +1,6 @@
 { config, pkgs, inputs, ... }:  {
     imports = [
-        ./stylix.nix
+        # ./stylix.nix
         ./hardware-configuration.nix
         ../../modules/nix-conf.nix
         ../../modules/boot.nix
