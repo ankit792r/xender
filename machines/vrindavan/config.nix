@@ -1,6 +1,5 @@
 { config, pkgs, inputs, ... }:  {
     imports = [
-        ./stylix.nix
         ./hardware-configuration.nix
         ../../modules/nix-conf.nix
         ../../modules/boot.nix
@@ -13,6 +12,7 @@
         ../../modules/sessions/niri.nix
         ../../packages/system.nix
         ../../variables.nix
+        ./stylix.nix
     ];
 
     networking.hostName = "vrindavan";
