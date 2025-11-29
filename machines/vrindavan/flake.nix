@@ -10,13 +10,13 @@
     };
   };
 
-  outputs = { self, nixpkgs, stylix, ... }@inputs: {
+  outputs = { self, nixpkgs, ... }@inputs: {
     nixosConfigurations.vrindavan = nixpkgs.lib.nixosSystem {
       system = "x86_64-linux";
       specialArgs = { inherit inputs; };
       modules = [
         ./config.nix
-        stylix.nixosModules.stylix
+        inputs.stylix.nixosModules.stylix
       ];
     };
   };
