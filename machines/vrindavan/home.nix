@@ -4,8 +4,8 @@
         ../../packages/office.nix
     ];
 
+    programs.firefox.enable = true;
     home.stateVersion = config.var.homeManagerVersion;
-    home.packages.firefox.enable = true;
     home.packages = with pkgs; [
         fastfetch
         zathura
