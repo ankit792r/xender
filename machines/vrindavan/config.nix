@@ -16,7 +16,6 @@
 
     networking.hostName = "vrindavan";
     home-manager = {
-        useGlobalPkgs = true;
         useUserPackages = true;
         users."${config.var.username}" = import ./home.nix;
         extraSpecialArgs = { 
