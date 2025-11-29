@@ -6,13 +6,13 @@
         ../../modules/network.nix
         ../../modules/desktop.nix
         ../../modules/services.nix
+        ../../modules/users.nix
+        ../../modules/sessions/niri.nix
 
-        ../../modules/niri.nix
         ../../packages/common.nix
         ../../packages/office.nix
-        
+
         ../../variables.nix
-        ../../modules/users.nix
     ];
 
     networking.hostName = "vrindavan";    

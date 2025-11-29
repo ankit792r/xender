@@ -1,6 +1,6 @@
 { config, pkgs, ... }: {
   programs.niri.enable = true;
-  services.xserver.displayManager.gdm.enable = true;
+  services.displayManager.ly.enable = true;
 
   xdg.portal = {
     enable = true;
@@ -15,9 +15,7 @@
     alacritty
     swaybg
     swaylock
-    
-    
-    # Screenshot tools
+
     grim
     slurp
     pavucontrol

@@ -2,9 +2,10 @@
 
 set -e
 
-echo "Linking config files to user's config directory"
+echo "Linking config files"
 TARGET_CONFIG_DIR="$HOME/.config"
 SOURCE_CONFIG_DIR="configs"
+
 mkdir -p "$TARGET_CONFIG_DIR"
 
 for dir in "$SOURCE_CONFIG_DIR"/*; do

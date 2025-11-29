@@ -5,16 +5,16 @@
     tree
     wget
     curl
-    git
-    
-
+    git  
     gcc
-    rustup
-    cargo
+  
     rustc
-    nodejs
+    cargo
+    rustfmt
+    clippy
+    rust-analyzer
 
-    lazygit
+    nodejs
 
     vim
     neovim
@@ -22,11 +22,11 @@
     fzf
     ripgrep
     ranger
-
+    lazygit
     htop
     fastfetch
-
     iputils
+    mpv
   ];
 
   fonts.packages = with pkgs; [
