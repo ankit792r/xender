@@ -3,7 +3,10 @@
 
   inputs = {
     nixpkgs.url = "github:NixOS/nixpkgs/nixos-unstable";
-    stylix.url = "github:nix-community/stylix";
+    stylix = {
+      url = "github:nix-community/stylix";
+      inputs.nixpkgs.follows = "nixpkgs";
+    };
     home = {
       url = "github:nix-community/home-manager";
       inputs.nixpkgs.follows = "nixpkgs";
@@ -16,8 +19,8 @@
         specialArgs = { inherit inputs; };
         modules = [
           ./config.nix
-          home.nixosModules.home-manager
           stylix.nixosModules.stylix
+          home.nixosModules.home-manager
         ];
       };
     };
