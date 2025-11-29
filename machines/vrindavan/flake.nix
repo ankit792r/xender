@@ -16,7 +16,7 @@
       specialArgs = { inherit inputs; };
       modules = [
         ./config.nix
-        inputs.stylix.nixosModules.stylix
+        stylix.nixosModules.stylix
       ];
     };
   };
