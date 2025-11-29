@@ -13,7 +13,7 @@
     };
   };
 
-  outputs = { self, nixpkgs, home, stylix, ... }@inputs: {
+  outputs = { nixpkgs, home, stylix, ... }@inputs: {
       nixosConfigurations.vrindavan = nixpkgs.lib.nixosSystem {
         system = "x86_64-linux";
         specialArgs = { inherit inputs; };
