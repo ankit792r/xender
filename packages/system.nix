@@ -17,19 +17,16 @@
     nodejs
 
     vim
-    neovim
-    tmux
     fzf
     ripgrep
     ranger
     lazygit
     htop
-    fastfetch
     iputils
-    mpv
-  ];
 
-  fonts.packages = with pkgs; [
-    nerd-fonts.jetbrains-mono
+    usbutils
+    pciutils
+    lshw
+    drm_info
   ];
 }

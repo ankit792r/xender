@@ -2,7 +2,14 @@
   nixpkgs.config.allowUnfree = true;
   nixpkgs.config.allowUnsupportedSystem = true;
 
-  environment.systemPackages = with pkgs; [
+  home.packages = with pkgs; [
+    cheese
+    libcamera
+    v4l-utils
+    mpv
+    vlc
+    ffmpeg   
+
     docker
     docker-compose
     lazydocker

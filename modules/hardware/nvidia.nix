@@ -47,21 +47,6 @@ in {
       modesetting.enable = true; # Required for Wayland
       package = nvidiaDriverChannel;
       forceFullCompositionPipeline = true; # Prevents screen tearing
-
-      # Configuration for hybrid AMD+Nvidia laptop
-      prime = {
-        # Optimized configuration for switchable graphics laptops
-        offload = {
-          enable = true; # Mode optimized for power saving
-          enableOffloadCmd =
-            true; # Allows running applications with dedicated GPU
-        };
-        # sync.enable disabled as offload is generally better for laptops
-        sync.enable = false;
-        # PCI IDs verified for your hardware
-        # amdgpuBusId = "PCI:5:0:0"; # Integrated AMD GPU
-        nvidiaBusId = "PCI:1:0:0"; # Dedicated Nvidia GPU
-      };
     };
 
     # Enhanced graphics support

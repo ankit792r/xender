@@ -1,24 +1,35 @@
-{ config, pkgs, ... }: {
+{ config, lib, pkgs, ... }: {
   programs.niri.enable = true;
-  services.displayManager.ly.enable = true;
-
   xdg.portal = {
     enable = true;
     extraPortals = [ pkgs.xdg-desktop-portal-wlr ];
   };
 
-  environment.systemPackages = with pkgs; [
+  home.packages  = with pkgs; [
     xwayland-satellite
     mako
-    rofi-wayland
+    fuzzel
     waybar
-    alacritty
+    kitty
+    ghostty
+    swww
     swaybg
     swaylock
+    imagemagick
 
     grim
     slurp
     pavucontrol
-    blueman
+    brightnessctl
+    wl-clipboard
+    wf-recorder
+    satty
+
+    powertop
+    acpi
+    wayland-utils
   ];
+
+  home.file = {
+  };
 }
