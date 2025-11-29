@@ -12,7 +12,6 @@
         ../../modules/sessions/niri.nix
         ../../packages/system.nix
         ../../variables.nix
-        ./stylix.nix
     ];
 
     networking.hostName = "vrindavan";
