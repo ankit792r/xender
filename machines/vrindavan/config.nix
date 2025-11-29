@@ -23,9 +23,6 @@
             inherit inputs;
             var = config.var;
         };
-        sharedModules = [
-            { stylix.targets.xyz.enable = false; }
-        ];
     };
     system.stateVersion = config.var.nixosVersion;
 }
