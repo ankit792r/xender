@@ -1,4 +1,4 @@
-{ config, lib, pkgs, ... }: {
+{ config, lib, pkgs, var, ... }: {
     home.packages = with pkgs; [     
         rustc
         cargo
