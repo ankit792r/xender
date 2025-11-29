@@ -1,4 +1,4 @@
-{ config, pkgs, inputs, ... }: {
+{ config, pkgs, inputs, stylix, ... }: {
     stylix.enable = true;
 
     # Base16 color scheme - you can change this to any base16 theme
