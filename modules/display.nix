@@ -25,5 +25,4 @@
 
     services.xserver.enable = true;
     services.xserver.desktopManager.xfce.enable = lib.mkDefault false;
-    services.displayManager.gdm.enable = false;
 }
