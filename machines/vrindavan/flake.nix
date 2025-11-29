@@ -3,19 +3,21 @@
 
   inputs = {
     nixpkgs.url = "github:NixOS/nixpkgs/nixos-unstable";
-    home-manager = {
+    stylix.url = "github:nix-community/stylix";
+    home = {
       url = "github:nix-community/home-manager";
       inputs.nixpkgs.follows = "nixpkgs";
     };
   };
 
-  outputs = { self, nixpkgs, home-manager, ... }@inputs: {
+  outputs = { self, nixpkgs, home, stylix, ... }@inputs: {
       nixosConfigurations.vrindavan = nixpkgs.lib.nixosSystem {
         system = "x86_64-linux";
         specialArgs = { inherit inputs; };
         modules = [
           ./config.nix
-          home-manager.nixosModules.home-manager
+          stylix.nixosModules.stylix
+          home.nixosModules.home-manager
         ];
       };
     };

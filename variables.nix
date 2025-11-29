@@ -1,17 +1,16 @@
 {config, lib, ...}: {
-    config= {
+    config = {
         var = {
+            name = "Ankit Prajapati";
             username = "ankit";
+            gitEmail = "77499177+ankit792r@users.noreply.github.com";
             nixosVersion = "25.05";
             homeManagerVersion = "25.05";
         };
         theme = {
             fonts = {
-                # System UI font (for SDDM, system dialogs)
                 main = "Inter";
-                # Terminal/code font (for terminals, waybar, fuzzel, notifications)
                 mono = "JetBrainsMono Nerd Font";
-                # Font size for UI elements
                 size = "12";
             };
 

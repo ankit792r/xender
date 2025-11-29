@@ -1,20 +1,13 @@
 { pkgs, ... }:  {
   nixpkgs.config.allowUnfree = true;
   environment.systemPackages = with pkgs; [
+    gcc
+    cmake
     which
     tree
     wget
     curl
-    git  
-    gcc
-  
-    rustc
-    cargo
-    rustfmt
-    clippy
-    rust-analyzer
-
-    nodejs
+    git
 
     vim
     fzf

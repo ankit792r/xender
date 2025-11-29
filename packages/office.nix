@@ -8,11 +8,16 @@
     v4l-utils
     mpv
     vlc
-    ffmpeg   
+    ffmpeg
 
     docker
     docker-compose
     lazydocker
     teams-for-linux
+
+    nodejs_24
+    yarn
+    prettier
+    eslint_d
   ];
 }

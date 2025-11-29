@@ -1,9 +1,15 @@
 { config, pkgs, inputs, var, ... }: {
     imports = [
+        ./env.nix
+        ../../packages/development.nix
         ../../packages/office.nix
     ];
 
     programs.firefox.enable = true;
+    home.username = var.username;
+    home.homeDirectory = "/home/${var.username}";
+    home.stateVersion = var.homeManagerVersion;
+
     home.packages = with pkgs; [
         xwayland-satellite
         mako
@@ -31,10 +37,12 @@
         fastfetch
         zathura
         neovim
-        vim
         tmux
     ];
 
-    home.file = {};
-    home.stateVersion = var.homeManagerVersion;
+    home.file = {
+        ".config/niri".source = ../../configs/niri;
+        ".config/fuzzel".source = ../../configs/fuzzel;
+        ".config/waybar".source = ../../configs/waybar;
+    };
 }
