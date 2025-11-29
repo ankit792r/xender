@@ -1,8 +1,5 @@
 { pkgs, ... }: {
     stylix = {
-        url = "github:nix-community/stylix";
-        inputs.nixpkgs.follows = "nixpkgs";
-
         enable = true;
 
         # Base16 color scheme - you can change this to any base16 theme
