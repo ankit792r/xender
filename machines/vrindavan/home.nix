@@ -36,5 +36,4 @@
     ];
 
     home.file = {};
-    home.stateVersion = config.var.homeManagerVersion;
 }
