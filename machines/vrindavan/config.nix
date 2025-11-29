@@ -9,6 +9,7 @@
         ../../modules/services.nix
         ../../modules/security.nix
         ../../modules/users.nix
+        ../../modules/sessions/niri.nix
         ../../packages/system.nix
         ../../variables.nix
     ];

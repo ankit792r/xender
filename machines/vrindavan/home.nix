@@ -3,11 +3,7 @@
         ../../packages/office.nix
     ];
 
-    programs = {
-        firefox.enable = true;
-        niri.enable = true;
-    };
-
+    programs.firefox.enable = true;
     home.packages = with pkgs; [
         xwayland-satellite
         mako
