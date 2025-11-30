@@ -1,7 +1,6 @@
 { pkgs, ... }: {
     stylix = {
         enable = true;
-        targets.firefox.enable = true;
         targets.firefox.profileNames = ["default"];
 
         # Base16 color scheme - you can change this to any base16 theme
