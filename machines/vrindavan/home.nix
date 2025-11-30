@@ -11,6 +11,7 @@
             default = {};
         };
     };
+    config.stylix.targets.firefox.profileNames = [ "default" ];
     home.username = var.username;
     home.homeDirectory = "/home/${var.username}";
     home.stateVersion = var.homeManagerVersion;
