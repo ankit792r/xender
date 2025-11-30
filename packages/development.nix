@@ -12,10 +12,10 @@
 
     programs.git = {
         enable = true;
-        user.name = var.name;
-        user.email = var.gitEmail;
+        userName = var.name;
+        userEmail = var.gitEmail;
         
-        settings = {
+        extraConfig = {
             init.defaultBranch = "main";
             pull.rebase = true;
             push.autoSetupRemote = true;
