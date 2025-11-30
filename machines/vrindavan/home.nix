@@ -5,13 +5,7 @@
         ../../packages/office.nix
     ];
 
-    programs.firefox = {
-        enable = true;
-        profiles = {
-            default = {};
-        };
-    };
-    config.stylix.targets.firefox.profileNames = [ "default" ];
+    programs.firefox.enable = true;
     home.username = var.username;
     home.homeDirectory = "/home/${var.username}";
     home.stateVersion = var.homeManagerVersion;
