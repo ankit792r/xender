@@ -12,9 +12,10 @@
 
     programs.git = {
         enable = true;
-        settings = {
-            user.name = var.name;
-            user.email = var.gitEmail;
+        userName = var.name;
+        userEmail = var.gitEmail;
+
+        extraConfig = {            
             init.defaultBranch = "main";
             pull.rebase = true;
             push.autoSetupRemote = true;
@@ -26,6 +27,9 @@
             
             diff.algorithm = "patience";
             merge.conflictstyle = "diff3";
+            alias = {
+                hist = "log --pretty=format:'%h %ad | %s%d [%an]' --graph --date=short";
+            };
         };
     };
 }
