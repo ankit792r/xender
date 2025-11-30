@@ -9,7 +9,6 @@
         enable = true;
         profiles = {
             default = {};
-            work = { bookmarks = []; };
         };
     };
     home.username = var.username;
