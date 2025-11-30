@@ -76,15 +76,15 @@ layout {
     }
     struts {
         left 2
-	right 2
-	top 2
-	bottom 2
+        right 2
+        top 2
+        bottom 2
     }
 }
 
 spawn-at-startup "waybar"
 spawn-at-startup "mako"
-spawn-sh-at-startup "swaybg -i ~/.config/oxide/backgrounds/50.png -m fill"
+spawn-sh-at-startup "swaybg -i ~/xender/wallpapers/02.jpg -m fill"
 
 hotkey-overlay {
 }

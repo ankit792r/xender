@@ -44,5 +44,12 @@
         ".config/niri".source = ../../configs/niri;
         ".config/fuzzel".source = ../../configs/fuzzel;
         ".config/waybar".source = ../../configs/waybar;
+        ".config/kitty".source = ../../configs/kitty;
+        ".config/fastfetch".source = ../../configs/fastfetch;
+        ".config/lazydocker".source = ../../configs/lazydocker;
+        ".config/lazygit".source = ../../configs/lazygit;
+        ".config/nvim".source = ../../configs/nvim;
+        ".config/starship".source = ../../configs/starship;
+        ".config/swaylock".source = ../../configs/swaylock;
     };
 }
