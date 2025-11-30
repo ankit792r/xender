@@ -1,21 +1,22 @@
 { pkgs, ... }: {
     stylix = {
         enable = true;
+        targets.firefox.profileNames = [ "ankit" ];
 
         # Base16 color scheme - you can change this to any base16 theme
         # Popular options: "gruvbox-dark-hard", "nord", "dracula", "tokyo-night-dark", "catppuccin-mocha"
-        base16Scheme = "${pkgs.base16-schemes}/share/themes/catppuccin-mocha.yaml";
+        base16Scheme = "${pkgs.base16-schemes}/share/themes/tokyo-night-dark.yaml";
 
         cursor = {
             package = pkgs.vimix-cursors;
-            name = "vimix-cursors";
+            name = "Vimix-Cursors";
             size = 24;
         };
 
         fonts = {
             monospace = {
                 package = pkgs.nerd-fonts.jetbrains-mono;
-                name = "JetBrainsMono Nerd Font";
+                name = "JetBrainsMono Nerd Font Mono";
             };
             sansSerif = {
                 package = pkgs.noto-fonts;

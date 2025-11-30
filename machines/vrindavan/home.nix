@@ -5,7 +5,13 @@
         ../../packages/office.nix
     ];
 
-    programs.firefox.enable = true;
+    programs.firefox = {
+        enable = true;
+        profiles = {
+            ankit = {};
+        };
+    };
+
     home.username = var.username;
     home.homeDirectory = "/home/${var.username}";
     home.stateVersion = var.homeManagerVersion;
